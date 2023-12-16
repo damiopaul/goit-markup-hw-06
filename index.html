@@ -286,26 +286,15 @@
           <h2 class="section-title portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
-              <div class="app-image">
-                <!-- <img src="./images/bankapp.jpg" alt="Banking App" width="360"> -->
-                <!-- <img 
-                srcset="./images/bankapp-mobile.jpg w288 1x,
-                        ./images/bankapp-mobile@2x.jpg w288 2x,
-                        ./images/bankapp-tablet.jpg w356 1x,
-                        ./images/bankapp-tablet@2x.jpg w356 2x,
-                        ./images/bankapp.jpg w360 1x,
-                        ./images/bankapp@2x.jpg w360 2x
-                        "
-                sizes="(max-width: 767px) 100vw"
-                alt="Banking App"> -->
-              <picture>
+              <div class="app-image">               
+              <picture>                
                 <source
                 srcset="
-                ./images/bankapp-mobile.jpg 1x,
-                ./images/bankapp-mobile@2x.jpg 2x
+                ./images/bankapp.jpg 1x,
+                ./images/bankapp@2x.jpg 2x
                 "
-                media="(max-width: 767px)"
-                 />
+                media="(min-width: 1200px)"            
+                />
                 
                 <source
                 srcset="
@@ -321,7 +310,14 @@
                 "
                 media="(min-width: 1200px)"            
                 />
-                <img src="./images/bankapp.jpg" alt="bankapp">
+                <source
+                srcset="
+                ./images/bankapp-mobile.jpg 1x,
+                ./images/bankapp-mobile@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+                 />
+                <img src="./images/bankapp-mobile.jpg" alt="bankapp" width="288">
               </picture>
               
                 <p class="hidden-text">
@@ -338,14 +334,14 @@
             <li class="portfolio-item">
               <div class="app-image">
                 <!-- <img src="./images/cashlesspayment.jpg" alt="Cashless Payment" width="360"> -->
-                <picture>
-                  <source
-                   srcset="
-                   ./images/cashlesspayment-mobile.jpg 1x,
-                   ./images/cashlesspayment-mobile@2x.jpg 2x
-                   "
-                   media="(max-width: 767px)"
-                   />
+                <picture>         
+                 <source
+                  srcset="
+                  ./images/cashlesspayment.jpg 1x,
+                  ./images/cashlesspayment@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"                  
+                  />
                   <source
                   srcset="
                   ./images/cashlesspayment-tablet.jpg 1x,
@@ -354,13 +350,13 @@
                   media="(min-width: 768px)"
                   />
                   <source
-                  srcset="
-                  ./images/cashlesspayment.jpg 1x,
-                  ./images/cashlesspayment@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                  />
-                  <img src="./images/cashlesspayment.jpg" alt="Cashless Payment">
+                   srcset="
+                   ./images/cashlesspayment-mobile.jpg 1x,
+                   ./images/cashlesspayment-mobile@2x.jpg 2x
+                   "
+                   media="(min-width: 320px)"
+                   />
+                  <img src="./images/cashlesspayment-mobile.jpg" alt="Cashless Payment" width="288">
                 </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -378,10 +374,10 @@
                 <picture>
                   <source
                   srcset="
-                  ./images/meditationapp-mobile.jpg 1x,
-                  ./images/meditationapp-mobile@2x.jpg 2x
+                  ./images/meditationapp.jpg 1x,
+                  ./images/meditationapp-@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"                  
                   />
                   <source
                   srcset="
@@ -389,15 +385,15 @@
                   ./images/meditationapp-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                  />
+                  />                  
                   <source
                   srcset="
-                  ./images/meditationapp.jpg 1x,
-                  ./images/meditationapp-@2x.jpg 2x
+                  ./images/meditationapp-mobile.jpg 1x,
+                  ./images/meditationapp-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"                  
+                  media="(min-width: 320px)"
                   />
-                  <img src="./images/meditationapp.jpg" alt="Meditaion App">
+                  <img src="./images/meditationapp-mobile.jpg" alt="Meditaion App" width="320">
                 </picture>
                 <p class="hidden-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -415,10 +411,10 @@
                 <picture>
                   <source
                   srcset="
-                  ./images/taxiservice-mobile.jpg 1x,
-                  ./images/taxiservice-mobile@2x.jpg 2x
+                  ./images/taxiservice.jpg 1x,
+                  ./images/taxiservice@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"                  
                   />
                   <source
                   srcset="
@@ -426,15 +422,15 @@
                   ./images/taxiservice-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                  />
+                  />                  
                   <source
                   srcset="
-                  ./images/taxiservice.jpg 1x,
-                  ./images/taxiservice@2x.jpg 2x
+                  ./images/taxiservice-mobile.jpg 1x,
+                  ./images/taxiservice-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"                  
+                  media="(min-width: 320px)"
                   />
-                  <img src="./images/taxiservice.jpg" alt="Taxi Service">
+                  <img src="./images/taxiservice-mobile.jpg" alt="Taxi Service" width="320">
                 </picture>
                 <p class="hidden-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -452,10 +448,10 @@
                 <picture>
                   <source
                   srcset="
-                  ./images/screenillustrations-mobile.jpg 1x,
-                  ./images/screenillustrations-mobile@2x.jpg 2x
+                  ./images/screenillustrations.jpg 1x,
+                  ./images/screenillustrations@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"                  
                   />
                   <source
                   srcset="
@@ -463,15 +459,15 @@
                   ./images/screenillustrations-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                  />
+                  />                  
                   <source
                   srcset="
-                  ./images/screenillustrations.jpg 1x,
-                  ./images/screenillustrations@2x.jpg 2x
+                  ./images/screenillustrations-mobile.jpg 1x,
+                  ./images/screenillustrations-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"                  
+                  media="(min-width: 320px)"
                   />
-                  <img src="./images/screenillustrations.jpg" alt="Screen Illustrations">
+                  <img src="./images/screenillustrations-mobile.jpg" alt="Screen Illustrations" width="320px">
                 </picture>
                 <p class="hidden-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
