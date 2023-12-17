@@ -43,7 +43,7 @@
             <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
           </li>
           <li class="address-item">
-            <a href="tel:+110001111111" class="contact link">+11 (000) 111-11-11</a>
+            <a href="tel:+110001111111" class="contact link">+11(000)111-11-11</a>
           </li>
         </ul>
       </address>
@@ -126,7 +126,11 @@
         <h2 class="section-title our-team-title">Our Team</h2>
         <ul class="team-list">
           <li class="image-background worker-card">
-            <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+            <img srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+            src="./images/mark.jpg"
+             alt="Mark Guerrero" 
+             width="264" />
+            
             <div class="worker">
               <h3 class="list-title worker-name">Mark Guerrero</h3>
               <p class="description worker-desc">Product Designer</p>
@@ -164,7 +168,10 @@
             </div>
           </li>
           <li class="image-background worker-card">
-            <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+            <img srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+            src="/images/tom.jpg"
+            alt="Tom Ford" 
+            width="264" />
             <div class="worker">
               <h3 class="list-title worker-name">Tom Ford</h3>
               <p class="description worker-desc">Frontend Developer</p>
@@ -203,7 +210,9 @@
 
           </li>
           <li class="image-background worker-card">
-            <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+            <img srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+            src="./images/camila.jpg"
+            alt="Camila Garcia" width="264" />
             <div class="worker">
               <h3 class="list-title worker-name">Camila Garcia</h3>
               <p class="description worker-desc">Marketing</p>
@@ -241,7 +250,9 @@
             </div>
           </li>
           <li class="image-background worker-card">
-            <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+            <img srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+            src="./images/daniel.jpg"
+            alt="Daniel Wilson" width="264" />
             <div class="worker">
               <h3 class="list-title worker-name">Daniel Wilson</h3>
               <p class="description worker-desc">UI Designer</p>
@@ -293,20 +304,18 @@
                 <source srcset="
                 ./images/bankapp.jpg 1x,
                 ./images/bankapp@2x.jpg 2x
-                " media="(min-width: 1200px)" />
+                " media="(min-width: 1158px)" />
 
                 <source srcset="
                 ./images/bankapp-tablet.jpg 1x,
                 ./images/bankapp-tablet@2x.jpg 2x
                 " media="(min-width: 768px)" />
-                <source srcset="
-                ./images/bankapp.jpg 1x,
-                ./images/bankapp@2x.jpg 2x
-                " media="(min-width: 1200px)" />
+                
                 <source srcset="
                 ./images/bankapp-mobile.jpg 1x,
                 ./images/bankapp-mobile@2x.jpg 2x
                 " media="(min-width: 320px)" />
+
                 <img src="./images/bankapp-mobile.jpg" alt="bankapp" width="288">
               </picture>
 
@@ -326,18 +335,24 @@
             <div class="app-image">
               <!-- <img src="./images/cashlesspayment.jpg" alt="Cashless Payment" width="360"> -->
               <picture>
+
                 <source srcset="
                   ./images/cashlesspayment.jpg 1x,
                   ./images/cashlesspayment@2x.jpg 2x
-                  " media="(min-width: 1200px)" />
+                  " 
+                  media="(min-width: 1158px)" />
+
                 <source srcset="
                   ./images/cashlesspayment-tablet.jpg 1x,
                   ./images/cashlesspayment-tablet@2x.jpg 2x
-                  " media="(min-width: 768px)" />
+                  "
+                  media="(min-width: 768px)" />
+
                 <source srcset="
                    ./images/cashlesspayment-mobile.jpg 1x,
                    ./images/cashlesspayment-mobile@2x.jpg 2x
-                   " media="(min-width: 320px)" />
+                   "
+                    media="(min-width: 320px)" />
                 <img src="./images/cashlesspayment-mobile.jpg" alt="Cashless Payment" width="288">
               </picture>
               <p class="hidden-text">
@@ -357,8 +372,8 @@
               <picture>
                 <source srcset="
                   ./images/meditationapp.jpg 1x,
-                  ./images/meditationapp-@2x.jpg 2x
-                  " media="(min-width: 1200px)" />
+                  ./images/meditationapp@2x.jpg 2x
+                  " media="(min-width: 1158px)" />
                 <source srcset="
                   ./images/meditationapp-tablet.jpg 1x,
                   ./images/meditationapp-tablet@2x.jpg 2x
@@ -475,9 +490,9 @@
   <footer class="footer-class section">
     <div class="container footer-container">
       <div class="footer-content footer-element">
-        <div class="footer-logo-cont">
+        <!-- <div class="footer-logo-cont"> -->
           <a href="./index.html" class="link footer-logo">Web<span class="footer-sub-logo">Studio</span></a>
-        </div>
+        <!-- </div> -->
         <p class="footer-description">
           Increase the flow of customers and sales for your business with digital
           marketing & growth solutions.
@@ -539,7 +554,7 @@
 
   </footer>
   <!-- MODAL -->
-  <div class="backdrop is-open">
+  <div class="backdrop">
     <div class="modal">
       <button class="modal-close-button" type="button">
         <svg class="close-icon" width="8" height="8" aria-label="close-modal-icon">
@@ -612,7 +627,7 @@
   </div>
   <!-- MOBILE MENU -->
   <div class="mobile-menu-wrapper is-open">
-    <div class="container">
+    <div class="container mobile-container">
       <button class="close-mobile-menu-button" type="button">
         <svg class="close-menu-icon" width="8" height="8">
           <use href="/images/icons.svg#icon-close"></use>
