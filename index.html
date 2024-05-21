@@ -694,7 +694,22 @@
     </div>
 
   </div>
-
+<script>
+    window.ctrlSettings = {webWidget: {actorId: "0c7ea261-0016-41f5-96b8-222d78a465c0"}
+    };
+  </script>
+   <script>
+(function () {
+  window.ctrl = window.ctrl || function () {
+    (window.ctrl.q = window.ctrl.q || []).push(arguments);
+  };
+  var script = document.createElement("script");
+  var parent = document.getElementsByTagName("script")[0].parentNode;
+  script.async = 1;
+  script.src = "https://widget.simulator.company/shim.js";
+  parent.appendChild(script);
+})();
+</script>
 </body>
 
 </html>
